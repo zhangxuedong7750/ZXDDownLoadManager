@@ -13,6 +13,9 @@
 		E1DC4D191C4B27D400202A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DC4D171C4B27D400202A48 /* Main.storyboard */; };
 		E1DC4D1B1C4B27D400202A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DC4D1A1C4B27D400202A48 /* Assets.xcassets */; };
 		E1DC4D1E1C4B27D400202A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DC4D1C1C4B27D400202A48 /* LaunchScreen.storyboard */; };
+		E1DC4D281C4B281E00202A48 /* ZXDDownloadManger.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DC4D271C4B281E00202A48 /* ZXDDownloadManger.m */; };
+		E1DC4D2B1C4B2A8F00202A48 /* ZXDSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DC4D2A1C4B2A8F00202A48 /* ZXDSessionModel.m */; };
+		E1DC4D2E1C4B2D0900202A48 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DC4D2D1C4B2D0900202A48 /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		E1DC4D1A1C4B27D400202A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1DC4D1D1C4B27D400202A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1DC4D1F1C4B27D400202A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DC4D261C4B281E00202A48 /* ZXDDownloadManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDDownloadManger.h; sourceTree = "<group>"; };
+		E1DC4D271C4B281E00202A48 /* ZXDDownloadManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDDownloadManger.m; sourceTree = "<group>"; };
+		E1DC4D291C4B2A8F00202A48 /* ZXDSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDSessionModel.h; sourceTree = "<group>"; };
+		E1DC4D2A1C4B2A8F00202A48 /* ZXDSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDSessionModel.m; sourceTree = "<group>"; };
+		E1DC4D2C1C4B2D0900202A48 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		E1DC4D2D1C4B2D0900202A48 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		E1DC4D0D1C4B27D400202A48 /* ZXDDownLoadManager */ = {
 			isa = PBXGroup;
 			children = (
+				E1DC4D251C4B27E400202A48 /* DowloadManger */,
 				E1DC4D111C4B27D400202A48 /* AppDelegate.h */,
 				E1DC4D121C4B27D400202A48 /* AppDelegate.m */,
 				E1DC4D141C4B27D400202A48 /* ViewController.h */,
@@ -77,6 +87,27 @@
 				E1DC4D0F1C4B27D400202A48 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1DC4D251C4B27E400202A48 /* DowloadManger */ = {
+			isa = PBXGroup;
+			children = (
+				E1DC4D2F1C4B32ED00202A48 /* Category */,
+				E1DC4D261C4B281E00202A48 /* ZXDDownloadManger.h */,
+				E1DC4D271C4B281E00202A48 /* ZXDDownloadManger.m */,
+				E1DC4D291C4B2A8F00202A48 /* ZXDSessionModel.h */,
+				E1DC4D2A1C4B2A8F00202A48 /* ZXDSessionModel.m */,
+			);
+			name = DowloadManger;
+			sourceTree = "<group>";
+		};
+		E1DC4D2F1C4B32ED00202A48 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E1DC4D2C1C4B2D0900202A48 /* NSString+Hash.h */,
+				E1DC4D2D1C4B2D0900202A48 /* NSString+Hash.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DC4D161C4B27D400202A48 /* ViewController.m in Sources */,
+				E1DC4D2E1C4B2D0900202A48 /* NSString+Hash.m in Sources */,
 				E1DC4D131C4B27D400202A48 /* AppDelegate.m in Sources */,
+				E1DC4D281C4B281E00202A48 /* ZXDDownloadManger.m in Sources */,
 				E1DC4D101C4B27D400202A48 /* main.m in Sources */,
+				E1DC4D2B1C4B2A8F00202A48 /* ZXDSessionModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
